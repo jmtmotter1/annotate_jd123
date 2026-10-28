@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jmtmotter1-annotate_jd123"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别标注平台与数据质量工程师·数据去重与污染检测的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "jmtmotter1" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://jmtmotter1.github.io"
+Repository = "https://github.com/jmtmotter1/annotate_jd123"
+Issues = "https://github.com/jmtmotter1/annotate_jd123/issues"
+
+[project.scripts]
+annotate_jd123 = "annotate_jd123:main"
+
+[tool.setuptools]
+py-modules = ["annotate_jd123"]
